@@ -80,3 +80,87 @@ img:not([alt*="logo"]) {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
+/** Home section **/
+.main {
+    /* semi-transparent light blue */  
+   background-color: rgba(173, 216, 230, 0.7);
+   animation: fadeIn 2s ease; /*Transforms*/
+   padding: 90px 85px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 40px;
+}
+
+.main .left {
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+}
+
+.main .left h3 {
+   margin-top: 10px;
+   font-weight: bold;
+   font-size: 46px;
+}
+
+.main .left h3 span {
+   color: #5e3bee;
+}
+
+.main .left p {
+   color: #1c1e53;
+   font-size: 22px;
+   margin-top: 20px;
+}
+
+.main .right img {
+   width: 500px;
+   border-radius: 1%;
+}
+
+/* Light shadow for a 3D effect */
+.left h1,
+.left h3,
+.left p {
+   margin: 0 0 20px;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+   
+}
+
+
+/* Pseudo-Elements */
+h1::after {
+   content: " - Full Stack Developer";
+   font-size: 14px;
+   color: #666;
+}
+
+
+/* Social Media Links below left section */
+.social-media-links {
+   margin-top: 20px;
+   text-align: left;
+}
+
+.social-media-links a {
+   display: inline-block;
+   text-decoration: none;
+   font-size: 18px;
+   margin-right: 15px;
+}
+
+
+/* Attribute selector: target links with href */
+a[href*="linkedin"] {
+   color: #0e76a8;
+}
+
+a[href*="github"] {
+   color: #333;
+}
+
+a[href*="instagram"] {
+   color: #e4405f;
+}
