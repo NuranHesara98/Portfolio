@@ -264,3 +264,90 @@ h1 + p {
 .portfolio .portfo-items .item:nth-child(3n) { 
     background-color: #fcecec;
 }
+
+
+/**Contact section**/
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #e6e9ee;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon {
+    font-size: 40px;
+    color: #3c91e6;
+}
+
+.info h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.info p {
+    font-size: 16px;
+    color: #666;
+}
+
+.contact-form {
+    flex: 1;
+    margin-left: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+input, textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+/* Styling the email, name, and subject input fields */
+input[type="email"],
+input[name="name"],
+input[name="subject"] {
+    border-color: #5e3bee;
+}
+
+/**Validity Pseudo-Class **/
+textarea:invalid { 
+        border: 2px solid red;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #5e3bee;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #357bb8;
+}
