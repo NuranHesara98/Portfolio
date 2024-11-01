@@ -351,3 +351,37 @@ button {
 button:hover {
     background-color: #357bb8;
 }
+
+/**Footer**/
+ /**Gradient (Add linear-gradient)**/
+ footer{
+    background: radial-gradient(circle, #5e3bee, #357bb8);
+    padding: 85px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .top,
+footer .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .top .social-links{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+}
+
+footer .separator{
+    width: 100%;
+    height: 1px;
+    background-color: #282938;
+    margin: 30px 0 20px;
+}
+
+footer .bottom p{
+    font-size: 12px;
+}
